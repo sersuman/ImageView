@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.Switch;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private RadioButton rdoRajeshhamal, rdoBhuvanKc, rdoDayahang;
@@ -21,15 +22,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rdoBhuvanKc.setOnClickListener(this);
     }
 
-
     @Override
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.rdoBhuvanKc:
+                Toast.makeText(MainActivity.this, "Bhuvan KC", Toast.LENGTH_LONG).show();
                 break;
             case R.id.rdoDayahang:
+                Toast.makeText(MainActivity.this, "Dayahang Rai", Toast.LENGTH_LONG).show();
                 break;
             case R.id.rdoRajeshHamal:
+                Toast.makeText(MainActivity.this, "Rajesh Hamal", Toast.LENGTH_LONG).show();
                 break;
         }
     }
